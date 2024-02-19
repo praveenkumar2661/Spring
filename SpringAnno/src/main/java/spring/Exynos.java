@@ -1,4 +1,7 @@
+package spring;
+import org.springframework.stereotype.Component;
 
+@Component
 public class Exynos implements MobileProcessor {
 
 	@Override
