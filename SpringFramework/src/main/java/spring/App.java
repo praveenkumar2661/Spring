@@ -7,7 +7,8 @@ public class App
 {
 	public static void main(String[] args) 
 	{
-		ApplicationContext context = new ClassPathXmlApplicationContext();
-		Vehicle obj = (Vehicle)context.getBean("Vehicle");
+		ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
+		Vehicle obj = (Vehicle)context.getBean("car");
+		obj.drive();
 	}
 }
