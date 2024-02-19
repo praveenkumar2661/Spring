@@ -9,6 +9,10 @@
    http://www.springframework.org/schema/context/spring-context-3.0.xsd">
         
 	<!-- <bean id = "vehicle" class = "spring.Bike"></bean> -->	
-	<context:component-scan base-package="spring"></context:component-scan>
+	<!-- <context:component-scan base-package="spring"></context:component-scan>  -->
+	<bean id = "tyre" class="spring.Tyre">
+		<property name="brand" value="MRF"></property>
+		<property name="inch" value="16"></property>
+	</bean>
 	
 </beans>
