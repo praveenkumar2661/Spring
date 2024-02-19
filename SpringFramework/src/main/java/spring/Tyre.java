@@ -1,4 +1,6 @@
 package spring;
+
+
 public class Tyre
 {
 	private String brand;
