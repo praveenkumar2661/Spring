@@ -1,16 +1,9 @@
 package spring;
-
 public class Tyre
 {
 	private String brand;
 	private int inch;
 	
-	public Tyre(String brand, int inch) {
-		super();
-		this.brand = brand;
-		this.inch = inch;
-	}
-
 	public String getBrand() {
 		return brand;
 	}
@@ -31,6 +24,8 @@ public class Tyre
 	public String toString() {
 		return "Tyre [brand=" + brand + ", inch=" + inch + "]";
 	}
+
+	
 
 	
 	
