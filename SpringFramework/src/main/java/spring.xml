@@ -11,8 +11,10 @@
 	<!-- <bean id = "vehicle" class = "spring.Bike"></bean> -->	
 	<!-- <context:component-scan base-package="spring"></context:component-scan>  -->
 	<bean id = "tyre" class="spring.Tyre">
-		<property name="brand" value="MRF"></property>
-		<property name="inch" value="16"></property>
+		<!-- <property name="brand" value="MRF"></property> -->
+		<!-- <property name="inch" value="16"></property> -->
+		<constructor-arg value="Ceat"></constructor-arg>
+		<constructor-arg value = "16"></constructor-arg>
 	</bean>
 	
 </beans>
