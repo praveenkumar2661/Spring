@@ -7,6 +7,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-Welcome Praveen!!!
+Welcome Praveen!!!<br><br>
+<form action="add" method="post">
+	Enter the 1st number:<input type="number" name="num1"><br><br>
+	Enter the 2nd number:<input type="number" name="num2"><br><br>
+	<button>Submit</button>
+</form>
 </body>
 </html>
