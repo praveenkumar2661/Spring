@@ -2,6 +2,7 @@ package com.Praveen.SpringMVCBoot;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
@@ -16,10 +17,9 @@ public class ControllerClass
 		return "index.jsp";
 	}
 	@RequestMapping("add")
-	public String add(HttpServletRequest req)
+	public String add(@RequestParam("num1") int i,@RequestParam("num2") int j, HttpSession session)
 	{
-		HttpSession session = req.getSession();
-		session.setAttribute("result", Integer.parseInt(req.getParameter("num1")) + Integer.parseInt(req.getParameter("num2")));
+		session.setAttribute("result", (i+j));
 		return "result.jsp";
 	}
 }
